@@ -26,7 +26,6 @@ router.post("/uploads", uploadMiddleware.multiple, uploadController.multiple);
 
 router.post("/auth/login", authController.login);
 router.post("/auth/register", authController.register);
-router.get("/auth/me", authController.me);
 router.put("/auth/profile", authMiddleware, authController.profile);
 router.get("/auth/me", authMiddleware, authController.me);
 
